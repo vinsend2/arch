@@ -1,0 +1,64 @@
+.header {
+  margin-top: 85px;
+  &__container {
+    display: flex;
+
+  }
+  &__btn-block {
+    position: relative;
+    left: 75px;
+  }
+  &__arrow-block {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 400px;
+    top: 6px;
+  }
+
+}
+@media screen and (max-width: 769px)   {
+  .header {
+    margin-top: 0;
+  }
+ 
+  .header__btn-block {
+    position: relative;
+    left: 20px;
+    top: 15px;
+  }
+  .header__btn-block .can-toggle label .can-toggle__switch {
+    flex: 0 0 220px;
+  }
+  .header__btn-block .can-toggle label .can-toggle__switch:before {
+    left: 110px;
+    font-size: 12px;
+    line-height: 36px;
+    width: 110px;
+  }
+  .header__btn-block .can-toggle input[type=checkbox]:checked ~ label .can-toggle__switch:after {
+    transform: translate3d(160px, 0, 0);
+  }
+  .header__btn-block .can-toggle label .can-toggle__switch:after {
+    border-radius: 10px;
+    width: 110px;
+    line-height: 36px;
+    font-size: 13px;
+  }
+  .header__arrow-block {
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: auto;
+    /* top: 6px; */
+    left: 20px;
+    top: 6px;
+    img {
+      width: 100px;
+    }
+  }
+}
