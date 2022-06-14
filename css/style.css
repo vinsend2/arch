@@ -703,6 +703,9 @@
   margin-left: 30px;
   font-size: 15px;
 }
+.main-block__imgs-block li:nth-of-type(2) p {
+  max-width: 110px;
+}
 .main-block article {
   font-size: 15px;
   background: rgba(255, 255, 255, 0.17);
@@ -945,6 +948,8 @@
 @media screen and (max-width: 769px) {
   .main-block__imgs-block {
     margin-top: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .main-block__imgs-block li p {
